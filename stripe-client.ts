@@ -45,7 +45,7 @@ export async function createPortalSession(): Promise<string | null> {
 
 // Price IDs mapping (placeholder — will use actual Stripe price IDs)
 export const STRIPE_PRICE_IDS: Record<string, string> = {
-  starter_monthly: 'price_starter_monthly',
-  growth_monthly: 'price_growth_monthly',
-  scale_monthly: 'price_scale_monthly',
+  starter_monthly: 'price_1TioG2Dp9xRtLgtm9z4AoMab',
+  growth_monthly: 'price_1TioGVDp9xRtLgtmdpugedwG',
+  scale_monthly: 'price_1TioGjDp9xRtLgtmnTguM077',
 };

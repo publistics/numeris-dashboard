@@ -1,7 +1,7 @@
 // API client for Numeris backend at http://0.0.0.0:3000/api/v1
 // Falls back to mock data when backend is unavailable
 
-export const API_BASE = 'http://0.0.0.0:3000/api/v1';
+export const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api/v1';
 
 export class ApiError extends Error {
   constructor(public status: number, message: string) {
