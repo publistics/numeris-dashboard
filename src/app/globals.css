@@ -45,6 +45,23 @@ body {
   animation: zoom-in 0.2s ease-out;
 }
 
+/* Scroll-reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.animate-reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered delay support */
+.reveal:nth-child(2) { transition-delay: 100ms; }
+.reveal:nth-child(3) { transition-delay: 200ms; }
+.reveal:nth-child(4) { transition-delay: 300ms; }
+
 /* Custom styles for tables */
 table {
   border-collapse: separate;

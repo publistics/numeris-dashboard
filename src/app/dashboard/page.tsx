@@ -1,21 +1,21 @@
 // Dashboard page - composes all dashboard components
 'use client';
 import { useState, useEffect } from 'react';
-import { DemoModeProvider } from '../../contexts/DemoContext';
-import Sidebar from '../../Sidebar';
-import Header from '../../Header';
-import DemoBanner from '../../DemoBanner';
-import SummaryCards from '../../SummaryCards';
-import TabNav from '../../TabNav';
-import ProfitAnalytics from '../../ProfitAnalytics';
-import ReconciliationTable from '../../ReconciliationTable';
-import ReconciliationDetail from '../../ReconciliationDetail';
-import AdSpendView from '../../AdSpendView';
-import ExpenseManagement from '../../ExpenseManagement';
-import InventoryHealth from '../../InventoryHealth';
-import SalesTaxNexus from '../../SalesTaxNexus';
-import CashFlowSimulation from '../../CashFlowSimulation';
-import ReportsView from '../../ReportsView';
+import { DemoModeProvider } from '@/contexts/DemoContext';
+import Sidebar from '@/components/Sidebar';
+import Header from '@/components/Header';
+import DemoBanner from '@/components/DemoBanner';
+import SummaryCards from '@/components/SummaryCards';
+import TabNav from '@/components/TabNav';
+import ProfitAnalytics from '@/components/ProfitAnalytics';
+import ReconciliationTable from '@/components/ReconciliationTable';
+import ReconciliationDetail from '@/components/ReconciliationDetail';
+import AdSpendView from '@/components/AdSpendView';
+import ExpenseManagement from '@/components/ExpenseManagement';
+import InventoryHealth from '@/components/InventoryHealth';
+import SalesTaxNexus from '@/components/SalesTaxNexus';
+import CashFlowSimulation from '@/components/CashFlowSimulation';
+import ReportsView from '@/components/ReportsView';
 
 export default function DashboardPage() {
   const [activeTab, setActiveTab] = useState('reconciliation');
